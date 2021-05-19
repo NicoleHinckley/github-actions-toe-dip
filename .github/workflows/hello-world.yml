@@ -13,6 +13,5 @@ jobs:
     steps:
       - run: echo "🎉 ${{job.name}} is starting!"
       - run: echo "Hello World"
-      - run: echo 
       - run: sleep 2
       - run: echo "🍏 This job's status is ${{ job.status }}."
