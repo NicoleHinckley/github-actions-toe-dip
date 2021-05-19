@@ -1,8 +1,6 @@
 name: Hello World
 
-on: 
-  push:
-    branches:  [master, develop]
+on: [push]
     
 jobs: 
   say-hello-world:
