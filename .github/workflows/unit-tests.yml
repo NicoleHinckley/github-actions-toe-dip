@@ -32,5 +32,5 @@ jobs:
       - name: Select Xcode
         run: sudo xcode-select -switch /Applications/Xcode_12.2.app && /usr/bin/xcodebuild -version
       - name: Run unit tests
-        run: xcodebuild test -project Github-Actions-Fun/Github-Actions-Fun.xcodeproj -scheme Github-Actions-Fun -destination 'platform=iOS Simulator,OS=13.6,name=iPhone 8'
+        run: xcodebuild clean test -project "Github-Actions-Fun/Github-Actions-Fun.xcodeproj" -scheme "Github-Actions-Fun" -destination "platform=iOS Simulator,name=iPhone 11 Pro Max,OS=latest"
 
