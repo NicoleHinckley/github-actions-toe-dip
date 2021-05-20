@@ -15,7 +15,9 @@ jobs:
     name: Echo Glasses
     runs-on: ${{ env.VALID_OS }}
     steps:
-      - run: echo "😎"
+      - run: echo 😎
  boil-water:
   name: Boil Water
   runs-on: ${{ env.VALID_OS }}
+  steps: 
+    - run: echo 🚰
