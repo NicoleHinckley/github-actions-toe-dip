@@ -16,5 +16,5 @@ jobs:
       - name: Select Xcode
         run: sudo xcode-select -switch /Applications/Xcode_12.2.app && /usr/bin/xcodebuild -version
       - name: Run unit tests
-        run: xcodebuild test -project Github-Actions-Fun/Github-Actions-Fun.xcodeproj -scheme Github-Actions-Fun -destination 'platform=iOS Simulator,name=iPhone 8,OS=14.4'
+        run: xcodebuild test -project Github-Actions-Fun/Github-Actions-Fun.xcodeproj -scheme Github-Actions-Fun -destination 'platform:iOS Simulator, id:dvtdevice-DVTiOSDeviceSimulatorPlaceholder-iphonesimulator:placeholder, name:Any iOS Simulator Device'
 
