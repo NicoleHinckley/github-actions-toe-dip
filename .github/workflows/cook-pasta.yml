@@ -1,0 +1,27 @@
+name: Learn Workflow Triggers
+
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    branches: [ master ]
+env:
+  BUILD_SUCCESS_MESSAGE: "Build succeeded"
+ 
+jobs:  
+ pasta-complete: 
+    name: Pasta Complete
+    runs-on: macOS-latest
+    needs: cook-pasta
+    steps:
+      - run: echo 😎 nice
+ cook-pasta:
+  name: Cook Pasta
+  runs-on: macOS-latest
+  steps: 
+    - run: echo 🚰
+    - run: sleep 2
+    - run: echo 👩‍🍳 🥘
+    - run: echo "cooking..."
+    - run: sleep 2
+    - run: echo "done! 🍝"
+   
