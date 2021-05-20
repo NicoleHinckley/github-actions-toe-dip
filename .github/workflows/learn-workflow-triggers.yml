@@ -5,16 +5,23 @@ on:
   push:
     branches: [ master ]
 env:
-  FL_SLACK_CHANNEL: 'cfanow-devs'
+  BUILD_SUCCESS_MESSAGE: "Build succeeded"
  
 jobs:  
- echo-glasses: 
-    name: Echo Glasses
+ pasta-complete: 
+    name: Pasta Complete
     runs-on: macOS-latest
+    needs: cook-pasta
     steps:
-      - run: echo 😎
- boil-water:
-  name: Boil Water
+      - run: echo 😎 nice
+ cook-pasta:
+  name: Cook Pasta
   runs-on: macOS-latest
   steps: 
     - run: echo 🚰
+    - run: sleep 2
+    - run: echo 👩‍🍳 🥘
+    - run: echo "cooking..."
+    - run: sleep 2
+    - run: echo "done! 🍝"
+   
