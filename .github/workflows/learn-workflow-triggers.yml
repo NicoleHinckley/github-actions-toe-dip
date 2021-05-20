@@ -15,23 +15,3 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "😎"
- letter-h: 
-   name: Letter H
-   runs-on: ubuntu-latest
-   steps:
-     - run: echo "H"
- letter-e: 
-   name: Letter E
-   runs-on: ubuntu-latest
-   steps:
-     - run: echo "E"
- letter-L: 
-   name: Letter L
-   runs-on: ubuntu-latest
-   steps:
-     - run: echo "L"
- letter-O: 
-   name: Letter O
-   runs-on: ubuntu-latest
-   steps:
-     - run: echo "O"
