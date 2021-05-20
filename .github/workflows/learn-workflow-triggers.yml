@@ -7,11 +7,15 @@ on:
     
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch: 
-
+env:
+ VALID_OS: macos-latest
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:  
  echo-glasses: 
     name: Echo Glasses
-    runs-on: ubuntu-latest
+    runs-on: ${{ env.VALID_OS }}
     steps:
       - run: echo "😎"
+ boil-water:
+  name: Boil Water
+  runs-on: ${{ env.VALID_OS }}
