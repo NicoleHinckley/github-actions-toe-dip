@@ -5,16 +5,16 @@ on:
   push:
     branches: [ master ]
 env:
- VALID_OS: macos-latest
+  FL_SLACK_CHANNEL: 'cfanow-devs'
  
 jobs:  
  echo-glasses: 
     name: Echo Glasses
-    runs-on: ${{ env.VALID_OS }}
+    runs-on: macOS-latest
     steps:
       - run: echo 😎
  boil-water:
   name: Boil Water
-  runs-on: ${{ env.VALID_OS }}
+  runs-on: macOS-latest
   steps: 
     - run: echo 🚰
