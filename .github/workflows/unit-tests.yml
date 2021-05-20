@@ -16,6 +16,6 @@ jobs:
       - name: List available Xcode versions
         run: ls /Applications | grep Xcode
       - name: Select Xcode
-        run: sudo xcode-select -switch /Applications/Xcode_11.3.app
+        run: sudo xcode-select -switch /Applications/Xcode_12.4.app
       - name: Run unit tests
-        run: xcodebuild clean test -project "Github-Actions-Fun/Github-Actions-Fun.xcodeproj" -scheme "Github-Actions-Fun" -destination "platform=iOS Simulator, name=Generic iOS Simulator Device"
+        run: xcodebuild clean test -project "Github-Actions-Fun/Github-Actions-Fun.xcodeproj" -scheme "Github-Actions-Fun" -destination 'platform=iOS Simulator,name=iPhone 12,OS=14.3' 
