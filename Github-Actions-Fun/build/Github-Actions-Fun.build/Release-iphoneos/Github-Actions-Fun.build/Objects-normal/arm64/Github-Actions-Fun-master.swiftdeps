@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
+options: "09134a54ac34f21fd01cc6c9c553900c"
+build_time: [1621526367, 135000000]
+inputs:
+  "/Users/nicolehinckley/Desktop/nerdcamp2021/Github-Actions-Fun/Github-Actions-Fun/AppDelegate.swift": [9223372036, 854775807]
+  "/Users/nicolehinckley/Desktop/nerdcamp2021/Github-Actions-Fun/Github-Actions-Fun/SceneDelegate.swift": [9223372036, 854775807]
+  "/Users/nicolehinckley/Desktop/nerdcamp2021/Github-Actions-Fun/Github-Actions-Fun/MathFactory.swift": [9223372036, 854775807]
+  "/Users/nicolehinckley/Desktop/nerdcamp2021/Github-Actions-Fun/Github-Actions-Fun/ContentView.swift": [9223372036, 854775807]
