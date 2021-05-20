@@ -6,6 +6,8 @@ on: # Event
    branches: 
     - master
     - develop
+   paths: 
+     - 'hello-world.*'
     
 jobs:
   say-hello-world: # Job 
