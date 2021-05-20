@@ -26,6 +26,8 @@ jobs:
         destination: ['platform=iOS Simulator,OS=13.1,name=iPhone 8']
     runs-on: macOS-latest
     steps:
+      - name: What can I even use
+        run: instruments -s devices
       - uses: actions/checkout@v1
       - name: List available Xcode versions
         run: ls /Applications | grep Xcode
