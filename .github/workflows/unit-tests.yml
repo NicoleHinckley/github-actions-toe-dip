@@ -15,7 +15,6 @@ jobs:
         run: ls /Applications | grep Xcode
       - name: Select Xcode
         run: sudo xcode-select -switch /Applications/Xcode_12.2.app && /usr/bin/xcodebuild -version
-      - name: Get into correct directory
-        run: cd Github-Actions-Fun/
       - name: Run unit tests
-        run: xcodebuild test -project Github-Actions-Fun.xcodeproj -scheme Github-Actions-Fun -destination 'platform=iOS Simulator,name=iPhone 8,OS=14.4'
+        run: xcodebuild test -project Github-Actions-Fun/Github-Actions-Fun.xcodeproj -scheme Github-Actions-Fun -destination 'platform=iOS Simulator,name=iPhone 8,OS=14.4'
+
