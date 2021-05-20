@@ -1,0 +1,20 @@
+# Workflow is triggered by an event which kicks of a job which has steps it executes which are build off of actions. 🙃
+
+name: Hello World # Workflow 
+on: # Event
+ push:
+   branches: 
+    - master
+    - develop
+   paths: 
+     - 'hello-world.*'
+    
+jobs:
+  say-hello-world: # Job 
+    name: "Say Hello World"
+    runs-on: ubuntu-latest
+    steps: # Step 
+      - run: echo "🎉 ${{job.name}} is starting!" # Action
+      - run: echo "Hello World"
+      - run: sleep 2
+      - run: echo "🍏 This job's status is ${{ job.status }}."
