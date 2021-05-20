@@ -28,9 +28,9 @@ jobs:
  
       - uses: sersoft-gmbh/xcodebuild-action@v1
         with:
-            project: MyApp.xcodeproj
-            scheme: MyApp
-            destination: platform=macOS
+            project: Github-Actions-Fun/Github-Actions-Fun.xcodeproj
+            scheme: Github-Actions-Fun
+            destination: platform=iOS
             action: test
 
  
