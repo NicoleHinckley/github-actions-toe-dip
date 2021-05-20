@@ -34,4 +34,4 @@ jobs:
       - name: Select Xcode
         run: sudo xcode-select -switch /Applications/Xcode_11.3.app
       - name: Run unit tests
-        run: xcodebuild clean test -project "Github-Actions-Fun/Github-Actions-Fun.xcodeproj" -scheme "Github-Actions-Fun" -destination "iPhone 12 Pro (14.4) + Apple Watch Series 6 - 40mm (7.2) [AF6E157F-0B8E-4945-BDED-0F33B0F3D0F4] (Simulator)"
+        run: xcodebuild clean test -project "Github-Actions-Fun/Github-Actions-Fun.xcodeproj" -scheme "Github-Actions-Fun"
