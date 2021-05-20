@@ -18,10 +18,6 @@ jobs:
         run: ls /Applications | grep Xcode
       - name: Select Xcode
         run: sudo xcode-select -switch /Applications/Xcode_12.2.app && /usr/bin/xcodebuild -version
-      - name: Build and test
-        run: bundle exec fastlane scan --destination "${destination}" --scheme "Github-Actions-Fun"
-        env:
-         destination: $
       - name: Run unit tests
-        run: xcodebuild test -project Github-Actions-Fun/Github-Actions-Fun.xcodeproj -scheme Github-Actions-Fun -destination 'platform:iOS Simulator, id:dvtdevice-DVTiOSDeviceSimulatorPlaceholder-iphonesimulator:placeholder, name:Any iOS Simulator Device'
+        run: xcodebuild test -project Github-Actions-Fun/Github-Actions-Fun.xcodeproj -scheme Github-Actions-Fun -destination "${destination}"
 
