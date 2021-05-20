@@ -18,4 +18,4 @@ jobs:
       - name: Select Xcode
         run: sudo xcode-select -switch /Applications/Xcode_11.3.app
       - name: Run unit tests
-        run: xcodebuild clean test -project "Github-Actions-Fun/Github-Actions-Fun.xcodeproj" -scheme "Github-Actions-Fun" -destination "platform=iOS Simulator,OS=14.4,name=iPhone 11 Pro (14.4) [F54FDA48-F1EA-4459-BBBC-37FAF4DDB50E]"
+        run: xcodebuild clean test -project "Github-Actions-Fun/Github-Actions-Fun.xcodeproj" -scheme "Github-Actions-Fun" -destination "platform:iOS Simulator, id:dvtdevice-DVTiOSDeviceSimulatorPlaceholder-iphonesimulator:placeholder, name:Generic iOS Simulator Device"
