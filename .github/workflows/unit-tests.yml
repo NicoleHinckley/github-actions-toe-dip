@@ -8,9 +8,6 @@ on:
 
 jobs:
   run_workspace_Tests:
-    strategy:
-      matrix:
-        destination: ['platform=iOS Simulator,OS=13.1,name=iPhone 8']
     runs-on: macOS-latest
     steps:
       - name: What can I even use
@@ -21,4 +18,4 @@ jobs:
       - name: Select Xcode
         run: sudo xcode-select -switch /Applications/Xcode_11.3.app
       - name: Run unit tests
-        run: xcodebuild clean test -project "Github-Actions-Fun/Github-Actions-Fun.xcodeproj" -scheme "Github-Actions-Fun"
+        run: xcodebuild clean test -project "Github-Actions-Fun/Github-Actions-Fun.xcodeproj" -scheme "Github-Actions-Fun" -destination "platform=iOS Simulator,OS=14.4,name=iPhone 11 (14.4)"
