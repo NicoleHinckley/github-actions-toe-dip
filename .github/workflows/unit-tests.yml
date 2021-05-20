@@ -16,9 +16,9 @@ jobs:
       - name: Force Xcode 11
         run: sudo xcode-select -switch /Applications/Xcode_11.3.app
       - name: Run tests
-        run: xcodebuild clean test -project "MyApp.xcodeproj" -scheme "MyApp" -destination "platform=iOS Simulator,name=iPhone 11 Pro Max,OS=latest"
+        run: xcodebuild clean test -project Github-Actions-Fun/Github-Actions-Fun.xcodeproj" -scheme "Github-Actions-Fun" -destination "platform=iOS Simulator,name=iPhone 11 Pro Max,OS=latest"
       - name: Build App
-        run: xcodebuild -project "MyApp.xcodeproj" -scheme "MyApp" -destination "generic/platform=iOS" -configuration Release build CODE_SIGNING_ALLOWED=NO
+        run: xcodebuild -project "Github-Actions-Fun/Github-Actions-Fun.xcodeproj" -scheme "Github-Actions-Fun" -destination "generic/platform=iOS" -configuration Release build CODE_SIGNING_ALLOWED=NO
 
   run_workspace_Tests:
     strategy:
