@@ -1,0 +1,17 @@
+name: Swift
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+    
+  
+jobs:
+  build:
+    runs-on: macos-latest
+    strategy:
+      matrix: 
+        fun-message: ["Hello", "potion", "seller", "🧪"]
+    steps:
+      - run: echo "${fun-message}"
