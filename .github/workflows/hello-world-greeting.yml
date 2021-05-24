@@ -7,7 +7,7 @@ on: # Event
     - master
     - develop
    paths: 
-     - 'hello-world.*'
+     - '**/hello-world.*'
     
 jobs:
   say-hello-world: # Job 
