@@ -1,8 +1,7 @@
 name: Unit Tests
 
 on:
-  pull_request:
-    branches: [master, develop]
+  pull_request
 
 jobs:
   run_workspace_Tests:
