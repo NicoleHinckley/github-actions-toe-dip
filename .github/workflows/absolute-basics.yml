@@ -1,4 +1,4 @@
-name: Learn Workflow Triggers
+name: Absolute basics
 
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
