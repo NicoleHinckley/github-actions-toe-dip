@@ -1,6 +1,6 @@
 # Workflow is triggered by an event which kicks of a job which has steps it executes which are build off of actions. 🙃
 
-name: Hello World # Workflow 
+name: Hello World - Path specific
 on: # Event
  push:
    branches: 
