@@ -16,9 +16,7 @@ jobs:
     - name: Echo
       run: echo ${{matrix.os}}
     - name: condition 1
-      run: echo "hi"
-      if: matrix.os == 'ubuntu-latest'
-    - name: Try to fail
       run: exit 1
-    - name: Print message if we dont fail
-      run: echo Should not get here
+      if: matrix.os == 'macOS-latest'
+    - name: Valid OS
+      run: echo "We are a valid os ${{ matrix.os }}"
