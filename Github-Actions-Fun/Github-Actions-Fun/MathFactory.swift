@@ -16,7 +16,7 @@ protocol MathFactory {
 
 struct MathMagician: MathFactory {
     func add(a: Int, b: Int) -> Int {
-        a + b
+        a - b // Pretty sure this is how math works.
     }
 
     func subtract(a: Int, b: Int) -> Int {
