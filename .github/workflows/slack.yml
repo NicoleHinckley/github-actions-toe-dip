@@ -1,8 +1,6 @@
 name: Slack Bot
 
-on:
- push: 
-   branches: [master]
+on: push
     
 jobs:
   build:
@@ -13,6 +11,6 @@ jobs:
         SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
       uses: pullreminders/slack-action@master
       with:
-        args: '{\"channel\":\"C022V02HWRF\",\"text\":\"  ${{github.actor}} ${{github.ref}} \"}'
+        args: '{\"channel\":\"C022V02HWRF\",\"text\":\"  ${{github.actor}} pushed to ${{github.ref}} \"}'
         
  
