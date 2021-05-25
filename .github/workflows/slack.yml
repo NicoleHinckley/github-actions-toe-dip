@@ -1,4 +1,4 @@
-name: Alert Slack When New Release Is Available
+name: Slack Bot
 
 on:
   release:
