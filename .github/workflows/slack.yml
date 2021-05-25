@@ -8,10 +8,9 @@ jobs:
   build:
     runs-on: macOS-latest
     steps:
-    - uses: actions/checkout@master
-    - name: Create a Release
-      uses: elgohr/Github-Release-Action@master
+    - name: Notify slack on success or failure
       env:
-        GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+        SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+      uses: pullreminders/slack-action@master
       with:
-        args: "New release stuff"
+        args: '{\"channel\":\"C022V02HWRF\",\"text\":\"Hello world\"}'
