@@ -6,7 +6,7 @@
 # See https://github.com/r-lib/actions/tree/master/examples#readme for
 # additional example workflows available for the R community.
 
-name: R
+name: Fastlane Fun
 
 on:
   push:
@@ -26,4 +26,4 @@ jobs:
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - uses: maierj/fastlane-action@v2.0.1
       with:
-        lane: 'test'
+        lane: 'ios test'
