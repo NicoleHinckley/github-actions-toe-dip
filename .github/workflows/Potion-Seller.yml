@@ -6,7 +6,6 @@ on:
   pull_request:
     branches: [ master ]
     
-  
 jobs:
   build:
     runs-on: macos-latest
@@ -15,3 +14,9 @@ jobs:
         fun-message: ["Hello", "potion", "seller", "🧪"]
     steps:
       - run: echo "${fun-message}"
+  build2: 
+   runs-on: macos-latest
+   needs: 
+     build 
+   steps: 
+     - run: echo "hi, build 1 must have finished"
