@@ -26,4 +26,4 @@ jobs:
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - uses: maierj/fastlane-action@v2.0.1
       with:
-        lane: 'ios test'
+        lane: 'ios tests'
