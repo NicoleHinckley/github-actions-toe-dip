@@ -14,7 +14,7 @@ jobs:
     name: "Say Hello World"
     runs-on: ubuntu-latest
     steps: # Step 
-      - run: echo "🎉 ${{job.name}} is starting!" # Action
+      - run: echo "🎉 ${{job.name}} is starting!" 
       - run: echo "Hello World"
       - run: sleep 2
       - run: echo "🍏 This job's status is ${{ job.status }}."
